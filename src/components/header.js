@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList, } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
-export default function Sandbox() {
+export default function Header() {
     return (
         <View style={styles.header}>
-            <Text style={styles.title}>My Todos Sandbox</Text>
+            <Text style={styles.title}>My Todos Header</Text>
         </View>
     )
 }
