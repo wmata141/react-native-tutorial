@@ -1,19 +1,10 @@
 import React from 'react';
 import { StyleSheet, View, TouchableWithoutFeedback, Keyboard } from 'react-native';
-import Header from './src/components/header';
-import TodoIndex from './src/modules/todo/todoIndex';
+import Navigator from './src/routes/homeStack';
 
 export default function App() {
   return (
-    <TouchableWithoutFeedback onPress={() => {
-      Keyboard.dismiss()
-      console.log('mismissed keyboard');
-    }}>
-      <View>
-        <Header />
-        <TodoIndex />
-      </View>
-    </TouchableWithoutFeedback>
+    <Navigator />
   );
 }
 
